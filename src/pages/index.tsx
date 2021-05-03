@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // markup
-const IndexPage = () => {
+const IndexPage: React.FunctionComponent = () => {
   return (
     <main>
       <title>Home Page</title>

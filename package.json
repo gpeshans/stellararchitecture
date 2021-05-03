@@ -17,7 +17,7 @@
     "tsc": "tsc",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,scss}\"",
     "lint": "eslint --ext .ts,.tsx src/",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "npm run lint --fix"
   },
   "dependencies": {
     "gatsby": "^3.4.0",
@@ -45,7 +45,8 @@
     "eslint": "^7.25.0",
     "eslint-plugin-react": "^7.23.2",
     "gh-pages": "^3.1.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
   },
   "repository": {
     "type": "git",

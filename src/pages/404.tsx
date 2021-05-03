@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 // markup
-const NotFoundPage = () => {
+const NotFoundPage: React.FunctionComponent = () => {
   return (
     <main>
       <title>Not found</title>
