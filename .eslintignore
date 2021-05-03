@@ -1,0 +1,11 @@
+# don't ever lint node_modules
+node_modules
+# don't lint build output
+public
+# don't lint cached files
+.cache
+# don't lint configuration files
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-ssr.js
