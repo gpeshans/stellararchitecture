@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: 'https://www.stellararchitecture.com',
   },
   plugins: [
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-google-analytics',

@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: gpeshans/stellararchitecture
+
+  branch: main
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: project
+    label: Project
+    folder: project
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
