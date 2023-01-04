@@ -1,17 +1,26 @@
 backend:
+  # name: git-gateway
   name: github
+  branch: main
   repo: gpeshans/stellararchitecture
 
-  branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
+local_backend: true
 media_folder: static/assets
 public_folder: /assets
 
 collections:
   - name: project
     label: Project
-    folder: project
+    folder: src/pages/projects
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
